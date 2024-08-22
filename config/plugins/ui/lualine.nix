@@ -1,17 +1,28 @@
+{ helpers, ... }:
 {
+
   plugins.lualine = {
     enable = true;
     globalstatus = true;
     iconsEnabled = true;
     theme = "auto";
     extensions = ["quickfix"];
+    # componentSeparators = {
+    #   left = "";
+    #   right = "";
+    # };
+    # sectionSeparators = {
+    #   left = "";
+    #   right = "";
+    # };
+
     componentSeparators = {
-      left = "";
-      right = "";
+      left = "";
+      right = "";
     };
     sectionSeparators = {
-      left = "";
-      right = "";
+      left = " ";
+      right = " ";
     };
 
     sections = {
@@ -31,24 +42,33 @@
       ];
       lualine_b = [
         {
-          name = "branch";
-          icon = "";
-        }
-        "db_ui#statusline"
-      ];
-      lualine_c = [
-        {
           name = "filename";
           extraConfig = {
             file_status = true;
             path = 1;
           };
         }
+        "diff"
+        "db_ui#statusline"
+      ];
+
+      lualine_c = [
+        {
+          name = helpers.mkRaw ''
+            function ()
+              return "🐼 pxndxs 😼"
+            end
+          '';
+        }
       ];
 
       lualine_x = [
+        "searchcount"
         "diagnostics"
-        "diff"
+        {
+          name = "branch";
+          icon = "";
+        }
       ];
 
       lualine_y = ["filetype"];

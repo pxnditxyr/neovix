@@ -9,6 +9,14 @@
       url = "github:altermo/ultimate-autopair.nvim";
       flake = false;
     };
+    plugin-kulala = {
+      url = "github:mistweaverco/kulala.nvim";
+      flake = false;
+    };
+    plugin-vim-visual-multi = {
+      url = "github:mg979/vim-visual-multi";
+      flake = false;
+    };
   };
 
   outputs =
