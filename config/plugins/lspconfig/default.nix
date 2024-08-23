@@ -12,12 +12,19 @@
       emmet-ls.enable = true;
       astro.enable = true;
     };
-    keymaps.lspBuf = {
-      K = "hover";
-      gD = "references";
-      gd = "definition";
-      gi = "implementation";
-      gt = "type_definition";
+    keymaps = {
+      lspBuf = {
+        K = "hover";
+        gD = "references";
+        gd = "definition";
+        gi = "implementation";
+        gt = "type_definition";
+      };
+      diagnostic = {
+        "[d" = "goto_next";
+        "]d" = "goto_prev";
+      };
     };
+
   };
 }
