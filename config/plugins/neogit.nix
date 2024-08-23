@@ -11,7 +11,7 @@
       mode = "n";
       key = "<leader>gg";
       options.desc = "Open Neoggit";
-      action = ":Neogit<cr>";
+      action = ":Neogit kind=split_above<cr>";
     }
   ];
 }
