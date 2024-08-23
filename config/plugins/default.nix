@@ -5,6 +5,7 @@
     ./gitsigns.nix
     ./kulala.nix
     ./lspconfig
+    ./luasnip.nix
     ./markview.nix
     ./neogit.nix
     ./oil.nix
