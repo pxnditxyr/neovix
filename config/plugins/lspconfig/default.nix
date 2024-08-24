@@ -25,6 +25,14 @@
         "]d" = "goto_prev";
       };
     };
-
   };
+
+  keymaps = [
+    {
+      action = "<cmd>LspRestart<Return>";
+      key = "<leader>rl";
+      mode = [ "n" ];
+      options = { noremap = true; };
+    }
+  ];
 }
