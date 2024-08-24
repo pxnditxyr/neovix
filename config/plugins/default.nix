@@ -10,6 +10,7 @@
     ./neogit.nix
     ./oil.nix
     ./telescope
+    ./todo-comments.nix
     ./treesitter.nix
     ./ui
     ./ultimate-autopairs.nix
