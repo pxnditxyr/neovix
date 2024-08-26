@@ -4,7 +4,7 @@
     ./copilot.nix
     ./gitsigns.nix
     ./kulala.nix
-    ./lspconfig
+    ./lsp
     ./luasnip.nix
     ./markview.nix
     ./neogit.nix
