@@ -9,7 +9,7 @@
       prismals.enable = true;
       tailwindcss.enable = true;
       intelephense.enable = true;
-      emmet-ls.enable = true;
+      # emmet-ls.enable = true;
       astro.enable = true;
     };
     keymaps = {
