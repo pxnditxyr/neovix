@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
   plugins = {
+    ts-autotag = {
+      enable = true;
+    };
     treesitter = {
       enable = true;
       settings = {
