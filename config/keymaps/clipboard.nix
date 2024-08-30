@@ -29,5 +29,15 @@
         desc = "Cut all";
       };
     }
+
+    # Change All
+    {
+      action = ":%d<Return>i";
+      mode = "n";
+      key = "<leader>c";
+      options = {
+        desc = "Change all";
+      };
+    }
   ];
 }
