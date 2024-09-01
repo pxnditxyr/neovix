@@ -9,6 +9,7 @@
       prismals.enable = true;
       tailwindcss.enable = true;
       intelephense.enable = true;
+      htmx.enable = true;
       emmet-ls = {
         enable = true;
         autostart = false;
@@ -29,8 +30,6 @@
       };
     };
   };
-
-
 
   keymaps = [
     {
