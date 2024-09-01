@@ -31,10 +31,10 @@
   extraConfigLua = ''
     vim.filetype.add({
       extension = {
-        mdx = 'mdx'
+        mdx = "markdown"
       }
     })
 
-    vim.treesitter.language.register('markdown', 'mdx')
+    vim.treesitter.language.register("markdown", "mdx")
   '';
 }
