@@ -1,5 +1,6 @@
 {
   imports = [
+    ./buffers.nix
     ./clipboard.nix
     ./move-lines.nix
     ./save-and-quit.nix
