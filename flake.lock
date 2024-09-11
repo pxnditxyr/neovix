@@ -165,6 +165,23 @@
         "type": "github"
       }
     },
+    "lsp-phpactor-laravel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725467409,
+        "narHash": "sha256-eNco/Du7XeOboGn1UYwjWQYMMbXb01GrU+yj5af0kss=",
+        "owner": "adalessa",
+        "repo": "phpactor",
+        "rev": "4514e5f6c5a843ea301df777f3b756f004107caa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adalessa",
+        "ref": "feature/laravel-extension",
+        "repo": "phpactor",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -329,6 +346,7 @@
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
+        "lsp-phpactor-laravel": "lsp-phpactor-laravel",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "plugin-kulala": "plugin-kulala",

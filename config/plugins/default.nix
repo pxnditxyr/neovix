@@ -4,6 +4,7 @@
     ./copilot.nix
     ./gitsigns.nix
     ./kulala.nix
+    ./languages
     ./lsp
     ./luasnip.nix
     ./markview.nix
