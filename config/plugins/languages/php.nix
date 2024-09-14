@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   extraPackages = [
-    pkgs.php83
-    pkgs.php83Packages.composer
+    pkgs.php84
+    pkgs.php84Packages.composer
   ];
 
   plugins.lsp.servers.phpactor = {

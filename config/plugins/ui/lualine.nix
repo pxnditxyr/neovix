@@ -1,78 +1,74 @@
 { helpers, ... }:
 {
-
   plugins.lualine = {
     enable = true;
-    globalstatus = true;
-    iconsEnabled = true;
-    theme = "auto";
-    extensions = ["quickfix"];
-    # componentSeparators = {
-    #   left = "";
-    #   right = "";
-    # };
-    # sectionSeparators = {
-    #   left = "";
-    #   right = "";
-    # };
+    settings = {
+      extensions = [ "quickfix" ];
 
-    componentSeparators = {
-      left = "";
-      right = "";
-    };
-    sectionSeparators = {
-      left = " ";
-      right = " ";
-    };
-
-    sections = {
-      lualine_a = [
-        {
-          name = "mode";
-          icon = {
-            icon = " ";
-            color = {
-              fg = "008A3D";
+      options = {
+        theme = "auto";
+        globalstatus = true;
+        iconsEnabled = true;
+        componentSeparators = {
+          left = "";
+          right = "";
+        };
+        sectionSeparators = {
+          left = " ";
+          right = " ";
+        };
+      };
+      sections = {
+        lualine_a = [
+          {
+            __unkeyed-1 = "mode";
+            icon = {
+              __unkeyed-1 = " ";
+              color = {
+                fg = "008A3D";
+              };
+              upper = true;
             };
-          };
-          extraConfig = {
-            upper = true;
-          };
-        }
-      ];
-      lualine_b = [
-        {
-          name = "filename";
-          extraConfig = {
+          }
+        ];
+        lualine_b = [
+          {
+            __unkeyed-1 = "filename";
             file_status = true;
+            symbols = {
+              modified = "📝";
+              readonly = "🔒";
+              unnamed = "😶";
+              newfile = "🌚";
+            };
             path = 1;
-          };
-        }
-        "diff"
-        "db_ui#statusline"
-      ];
+          }
+          "diff"
+          "db_ui#statusline"
+        ];
 
-      lualine_c = [
-        {
-          name = helpers.mkRaw ''
+        lualine_c = [
+          {
+            __unkeyed-1 = helpers.mkRaw ''
             function ()
               return "🐼 pxndxs 😼"
             end
-          '';
-        }
-      ];
+            '';
+          }
+        ];
 
-      lualine_x = [
-        "searchcount"
-        "diagnostics"
-        {
-          name = "branch";
-          icon = "";
-        }
-      ];
+        lualine_x = [
+          "searchcount"
+          "diagnostics"
+          {
+            __unkeyed-1 = "branch";
+            icon = "";
+          }
+        ];
 
-      lualine_y = ["filetype"];
-      lualine_z = ["location"];
+        lualine_y = ["filetype"];
+        lualine_z = ["location"];
+      };
     };
   };
 }
