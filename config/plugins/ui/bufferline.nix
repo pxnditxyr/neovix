@@ -84,7 +84,7 @@
           ];
         };
         modified_icon = "📝";
-        tab_size = 18;
+        tab_size = 5;
         truncate_names = true;
       };
     };
