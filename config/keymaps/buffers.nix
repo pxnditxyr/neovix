@@ -4,7 +4,7 @@
     {
       action = ":bnext<Return>";
       mode = "n";
-      key = "bn";
+      key = "<leader>bn";
       options = {
         desc = "Move between buffers";
       };
@@ -12,7 +12,7 @@
     {
       action = ":bprev<Return>";
       mode = "n";
-      key = "bp";
+      key = "<leader>bp";
       options = {
         desc = "Move between buffers";
       };
@@ -20,7 +20,7 @@
     {
       action = ":bfirst<Return>";
       mode = "n";
-      key = "bf";
+      key = "<leader>bf";
       options = {
         desc = "Move between buffers";
       };
@@ -28,7 +28,7 @@
     {
       action = ":blast<Return>";
       mode = "n";
-      key = "bl";
+      key = "<leader>bl";
       options = {
         desc = "Move between buffers";
       };
