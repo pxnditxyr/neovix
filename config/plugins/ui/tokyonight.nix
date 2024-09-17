@@ -2,8 +2,26 @@
   colorschemes.tokyonight = {
     enable = true;
     settings = {
+      style = "storm";
       transparent = true;
-
+      terminal_colors = true;
+      day_brightness = 0.3;
+      sidebars = [
+        "qf"
+        "help"
+      ];
+      styles = {
+        comments = {
+          italic = true;
+        };
+        keywords = {
+          italic = true;
+        };
+        functions = { };
+        variables = { };
+        floats = "dark";
+        sidebars = "dark";
+      };
       on_colors = ''
       function( colors )
         colors.bg_dark = '#1f2335'
