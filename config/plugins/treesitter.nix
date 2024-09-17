@@ -60,7 +60,7 @@
     vim.api.nvim_set_hl( 0, 'RainbowDelimiterYellow', { fg = '#73ff00' } )
     vim.api.nvim_set_hl( 0, 'RainbowDelimiterBlue', { fg = '#00ff9d' } )
     vim.api.nvim_set_hl( 0, 'RainbowDelimiterOrange', { fg = '#e28400' } )
-    vim.api.nvim_set_hl( 0, 'RainbowDelimiterGreen', { fg = '#F6FB7A' } )
+    vim.api.nvim_set_hl( 0, 'RainbowDelimiterGreen', { fg = '#06D001' } )
     vim.api.nvim_set_hl( 0, 'RainbowDelimiterViolet', { fg = '#bbff00' } )
     vim.api.nvim_set_hl( 0, 'RainbowDelimiterCyan', { fg = '#ff00ff' } )
 
