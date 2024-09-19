@@ -311,6 +311,22 @@
         "type": "github"
       }
     },
+    "plugin-supermaven": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1726601131,
+        "narHash": "sha256-AFqQLySDCh2aZpBUTWUyb/QK4DxsRd2pakCJOI+PtlM=",
+        "owner": "supermaven-inc",
+        "repo": "supermaven-nvim",
+        "rev": "3da044bbc23a354e9cb17602ed2d5ca8528173bb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "supermaven-inc",
+        "repo": "supermaven-nvim",
+        "type": "github"
+      }
+    },
     "plugin-ultimate-autopairs": {
       "flake": false,
       "locked": {
@@ -350,6 +366,7 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "plugin-kulala": "plugin-kulala",
+        "plugin-supermaven": "plugin-supermaven",
         "plugin-ultimate-autopairs": "plugin-ultimate-autopairs",
         "plugin-vim-visual-multi": "plugin-vim-visual-multi"
       }
