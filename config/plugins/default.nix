@@ -1,8 +1,7 @@
 {
   imports = [
-    ./cmp
     # ./copilot.nix
-    ./supermaven.nix
+    ./cmp
     ./gitsigns.nix
     ./kulala.nix
     ./languages
@@ -10,7 +9,9 @@
     ./luasnip.nix
     ./markview.nix
     ./neogit.nix
+    ./node-info.nix
     ./oil.nix
+    ./supermaven.nix
     ./telescope
     ./todo-comments.nix
     ./treesitter.nix
