@@ -3,7 +3,7 @@
     enable = true;
     servers = {
       nixd.enable = true;
-      tsserver.enable = true;
+      ts-ls.enable = true;
       pyright.enable = true;
       yamlls.enable = true;
       prismals.enable = true;

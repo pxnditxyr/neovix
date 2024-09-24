@@ -21,6 +21,6 @@
   ];
 
   plugins = {
-    surround.enable = true;
+    vim-surround.enable = true;
   };
 }
