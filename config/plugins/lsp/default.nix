@@ -3,14 +3,16 @@
     enable = true;
     servers = {
       nixd.enable = true;
-      ts-ls.enable = true;
+      ts_ls.enable = true;
       pyright.enable = true;
       yamlls.enable = true;
-      prismals.enable = true;
+      prismals = {
+        enable = true;
+        package = null;
+      };
       tailwindcss.enable = true;
-      intelephense.enable = true;
       htmx.enable = true;
-      emmet-ls = {
+      emmet_ls = {
         enable = true;
         autostart = false;
       };

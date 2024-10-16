@@ -12,7 +12,7 @@ let
       pname = "phpactor";
       version = "master";
       src = inputs.lsp-phpactor-laravel;
-      vendorHash = "sha256-PjtXBbihPW4n6wa/4RY85fNQAupzVlWykNrp31or0g4=";
+      vendorHash = "sha256-N1EPt0VylK4FeLWb/Ss3nVxghSTTa/6rPglefLUY+04=";
     } );
   };
 in
