@@ -1,6 +1,6 @@
 {
   imports = [
-    ./copilot.nix
+    # ./copilot.nix
     ./cmp
     ./gitsigns.nix
     ./kulala.nix
@@ -11,7 +11,7 @@
     ./neogit.nix
     ./node-info.nix
     ./oil.nix
-    # ./supermaven.nix
+    ./supermaven.nix
     ./telescope
     ./todo-comments.nix
     ./treesitter.nix
