@@ -9,6 +9,6 @@
   ];
 
   plugins = {
-    nvim-colorizer.enable = true;
+    colorizer.enable = true;
   };
 }

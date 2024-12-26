@@ -7,6 +7,5 @@
 
   plugins.lsp.servers.phpactor = {
     enable = true;
-    package = pkgs.lsp-phpactor-laravel;
   };
 }

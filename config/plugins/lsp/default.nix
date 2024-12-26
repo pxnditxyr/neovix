@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   plugins.lsp = {
     enable = true;
@@ -32,6 +33,10 @@
       };
     };
   };
+
+  extraPlugins = with pkgs.vimPlugins; [
+    nvim-lspconfig
+  ];
 
   keymaps = [
     {
