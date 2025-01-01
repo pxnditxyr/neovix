@@ -1,46 +1,81 @@
-{ pkgs, inputs, helpers, lib, ... }:
+{ helpers, ... }:
 {
-  extraPlugins = [
-    ( pkgs.vimUtils.buildVimPlugin {
-      name = "kulala nvim";
-      src = inputs.plugin-kulala;
-    } )
-  ];
-
-  extraConfigLua = ''
-    require( "kulala" ).setup()
-  '';
-
-  filetype.extension.http = "http";
-
-  files."after/ftplugin/http.lua".keymaps =
-    lib.mapAttrsToList
-      ( key: function: {
-        inherit key;
-        mode = "n";
-        options.buffer = true;
-        action = helpers.mkRaw "function() ${function} end";
-      } )
-      {
-        "<leader>rh" = "require('kulala').run()";
-        "<leader>ra" = "require('kulala').run_all()";
-        "<leader>rr" = "require('kulala').replay()";
-        "<leader>rs" = "require('kulala').scratchpad()";
-        "<leader>rj" = "require('kulala').jump_next()";
-        "<leader>rk" = "require('kulala').jump_prev()";
-        "<leader>rv" = "require('kulala').toggle_view()";
+  plugins.kulala = {
+    enable = true;
+    settings = {
+      default_env = "dev";
+      defualt_view = "body";
+      icons = {
+        inlay = {
+          done = "✅";
+          error = "❌";
+          loading = "⏳";
+        };
+        lualine = "🐼";
       };
+      contenttypes = {
+        "application/json" = {
+          formatter = [
+            "jq"
+            "."
+          ];
+          ft = "json";
+          pathresolver = {
+            __raw = "require('kulala.parser.jsonpath').parse";
+          };
+        };
+        "application/xml" = {
+          formatter = [
+            "xmllint"
+            "--format"
+            "-"
+          ];
+          ft = "xml";
+          pathresolver = [
+            "xmllint"
+            "--xpath"
+            "{{path}}"
+            "-"
+          ];
+        };
+        "text/html" = {
+          formatter = [
+            "xmllint"
+            "--format"
+            "--html"
+            "-"
+          ];
+          ft = "html";
+          pathresolver = [ ];
+        };
+      };
+    };
+  };
+
   keymaps = [
     {
       mode = "n";
-      key = "<leader>rp";
-      action = helpers.mkRaw "function() require('kulala').search() end";
+      key = "<leader>kr";
+      action = helpers.mkRaw ''
+        function() require( 'kulala' ).run() end
+      '';
+      options.desc = "Run kulala";
     }
-  ];
-
-  extraPackages = [
-    pkgs.jq
-    pkgs.curl
-    pkgs.libxml2
+    {
+      mode = "n";
+      key = "<leader>kn";
+      action = helpers.mkRaw ''
+        function() require('kulala').jump_next() end
+      '';
+      options.desc = "kulala jump next";
+    }
+    {
+      mode = "n";
+      key = "<leader>kp";
+      action = helpers.mkRaw ''
+        function() require('kulala').jump_prev() end
+      '';
+      options.desc = "kulala jump prev";
+    }
   ];
 }
