@@ -23,10 +23,6 @@
       url = "github:adalessa/phpactor/feature/laravel-extension";
       flake = false;
     };
-    plugin-supermaven = {
-      url = "github:supermaven-inc/supermaven-nvim";
-      flake = false;
-    };
   };
 
   outputs =

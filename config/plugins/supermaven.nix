@@ -1,10 +1,7 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   extraPlugins = [
-    ( pkgs.vimUtils.buildVimPlugin {
-      name = "supermaven";
-      src = inputs.plugin-supermaven;
-    } )
+    pkgs.vimPlugins.supermaven-nvim
   ];
 
   extraConfigLua = ''
