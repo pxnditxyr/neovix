@@ -1,7 +1,8 @@
 {
   imports = [
     # ./copilot.nix
-    ./cmp
+    # ./cmp
+    ./blink-cmp.nix
     ./gitsigns.nix
     ./kulala.nix
     ./languages
