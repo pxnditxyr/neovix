@@ -34,12 +34,12 @@
         default = [
           "lsp"
           "path"
-          "luasnip"
+          "snippets"
           "buffer"
         ];
       };
       keymap = {
-        preset = "enter";
+        preset = "default";
         "<S-Tab>" = {
           __raw = ''{}'';
         };

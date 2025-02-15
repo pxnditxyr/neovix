@@ -18,6 +18,7 @@
         autostart = false;
       };
       astro.enable = true;
+      angularls.enable = true;
     };
     keymaps = {
       lspBuf = {
