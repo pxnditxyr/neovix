@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   plugins.lsp = {
+    setupWrappers = [ (s: ''require('blink.cmp').get_lsp_capabilities(${s})'' ) ];
     enable = true;
     servers = {
       nixd.enable = true;
