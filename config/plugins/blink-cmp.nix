@@ -1,7 +1,9 @@
 { lib, ... }:
 {
+  plugins.blink-emoji.enable = true;
   plugins.blink-cmp = {
     enable = true;
+    setupLspCapabilities = true;
     settings = {
       appearance.kind_icons = {
         Class = "󰌔";
@@ -36,7 +38,19 @@
           "path"
           "snippets"
           "buffer"
+          "emoji"
         ];
+        providers = {
+          emoji = {
+            module = "blink-emoji";
+            name = "Emoji";
+            score_offset = 15;
+            opts = {
+              insert = true;
+            };
+          };
+        };
+
       };
       keymap = {
         preset = "default";
@@ -62,11 +76,10 @@
           end
         '';
         jump = lib.nixvim.mkRaw ''
-          function(direction) require('luasnip').jump(direction) end
+          function( direction ) require( 'luasnip' ).jump( direction ) end
         '';
       };
       completion.menu = {
-
         border = "padded";
         draw = {
           columns = [
