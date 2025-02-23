@@ -1,3 +1,8 @@
+> [!WARNING]
+> ⚠️ This repository is deprecated!
+> The development has moved to the new and improved version: **[NeoCats](https://github.com/pxnditxyr/neocats)**.
+
+
 # 🛠️ NeoVix - Neovim Config with Nix 🧩
 
 Welcome to my NeoVix configuration repository! 📝 This setup is powered by the flexibility and robustness of Nix, based on the awesome Nixvim template 🚀. Inside, you'll find:
